@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7E32802-561A-4A16-8D2D-6EC073618542}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QUANLYKHACHSAN</RootNamespace>
+    <AssemblyName>QUANLYKHACHSAN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v14.1" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1" />
+    <Reference Include="DevExpress.XtraBars.v14.1" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core" />
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1" />
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\ChiTietPDV_BUS.cs" />
+    <Compile Include="BUS\DangKyPhongCTBUS.cs" />
+    <Compile Include="BUS\DichVuBUS.cs" />
+    <Compile Include="BUS\KhachHangBUS.cs" />
+    <Compile Include="BUS\KhachSanBUS.cs" />
+    <Compile Include="BUS\LoaiPhongBUS.cs" />
+    <Compile Include="BUS\NhanVienBUS.cs" />
+    <Compile Include="BUS\PhieuDangKyPhongBUS.cs" />
+    <Compile Include="BUS\PhieuDichVuBUS.cs" />
+    <Compile Include="BUS\PhieuThanhToanBUS.cs" />
+    <Compile Include="BUS\PhongBUS.cs" />
+    <Compile Include="BUS\ThamSoBUS.cs" />
+    <Compile Include="DAO\ChiTietPDV_DAO.cs" />
+    <Compile Include="DAO\DangKyPhongCTDAO.cs" />
+    <Compile Include="DAO\DichVuDAO.cs" />
+    <Compile Include="DAO\KhachHangDAO.cs" />
+    <Compile Include="DAO\KhachSanDAO.cs" />
+    <Compile Include="DAO\LoaiPhongDAO.cs" />
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\PhieuDangKyPhongDAO.cs" />
+    <Compile Include="DAO\PhieuDichVuDAO.cs" />
+    <Compile Include="DAO\PhieuThanhToanDAO.cs" />
+    <Compile Include="DAO\PhongDAO.cs" />
+    <Compile Include="DAO\ThamSoDAO.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Object\ChiTietPDV.cs" />
+    <Compile Include="Object\DangKyPhongCT.cs" />
+    <Compile Include="Object\DichVu.cs" />
+    <Compile Include="Object\KhachHang.cs" />
+    <Compile Include="Object\KhachSan.cs" />
+    <Compile Include="Object\LoaiPhong.cs" />
+    <Compile Include="Object\NhanVien.cs" />
+    <Compile Include="Object\PhieuDangKyPhong.cs" />
+    <Compile Include="Object\PhieuDichVu.cs" />
+    <Compile Include="Object\PhieuThanhToan.cs" />
+    <Compile Include="Object\Phong.cs" />
+    <Compile Include="Object\ThamSo.cs" />
+    <Compile Include="PresentationLayers\frmDangKyDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDangKyDichVu.Designer.cs">
+      <DependentUpon>frmDangKyDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDangKyPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDangKyPhong.Designer.cs">
+      <DependentUpon>frmDangKyPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDanhSachKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDanhSachKhachHang.Designer.cs">
+      <DependentUpon>frmDanhSachKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDanhSachPhieuThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDanhSachPhieuThanhToan.Designer.cs">
+      <DependentUpon>frmDanhSachPhieuThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDanhSachPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDanhSachPhong.Designer.cs">
+      <DependentUpon>frmDanhSachPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDoanhThuTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDoanhThuTheoNgay.Designer.cs">
+      <DependentUpon>frmDoanhThuTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDoanhThuTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDoanhThuTheoThang.Designer.cs">
+      <DependentUpon>frmDoanhThuTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmDoiMatKhau.Designer.cs">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmHoaDonThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmHoaDonThanhToan.Designer.cs">
+      <DependentUpon>frmHoaDonThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmLoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmLoaiPhong.Designer.cs">
+      <DependentUpon>frmLoaiPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThanhToan.Designer.cs">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThayDoiQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThayDoiQuyDinh.Designer.cs">
+      <DependentUpon>frmThayDoiQuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThemDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThemDichVu.Designer.cs">
+      <DependentUpon>frmThemDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmNhanPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmNhanPhong.Designer.cs">
+      <DependentUpon>frmNhanPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThongTinKhachSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThongTinKhachSan.Designer.cs">
+      <DependentUpon>frmThongTinKhachSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThongTinNhom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmThongTinNhom.Designer.cs">
+      <DependentUpon>frmThongTinNhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemDichVu.Designer.cs">
+      <DependentUpon>frmTimKiemDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemKhachHang.Designer.cs">
+      <DependentUpon>frmTimKiemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemNhanVien.Designer.cs">
+      <DependentUpon>frmTimKiemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTimKiemPhong.Designer.cs">
+      <DependentUpon>frmTimKiemPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTroGiup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentationLayers\frmTroGiup.Designer.cs">
+      <DependentUpon>frmTroGiup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLKSDataSet.cs">
+      <DependentUpon>QLKSDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="QLKSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLKSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlDataProvider.cs" />
+    <Compile Include="Support\BackupAndRestore.cs" />
+    <Compile Include="Support\HamHoTro.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDangKyDichVu.resx">
+      <DependentUpon>frmDangKyDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDangKyPhong.resx">
+      <DependentUpon>frmDangKyPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDanhSachKhachHang.resx">
+      <DependentUpon>frmDanhSachKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDanhSachPhieuThanhToan.resx">
+      <DependentUpon>frmDanhSachPhieuThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDanhSachPhong.resx">
+      <DependentUpon>frmDanhSachPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDoanhThuTheoNgay.resx">
+      <DependentUpon>frmDoanhThuTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDoanhThuTheoThang.resx">
+      <DependentUpon>frmDoanhThuTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmDoiMatKhau.resx">
+      <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmHoaDonThanhToan.resx">
+      <DependentUpon>frmHoaDonThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmLoaiPhong.resx">
+      <DependentUpon>frmLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmThanhToan.resx">
+      <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmThayDoiQuyDinh.resx">
+      <DependentUpon>frmThayDoiQuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmThemDichVu.resx">
+      <DependentUpon>frmThemDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmNhanPhong.resx">
+      <DependentUpon>frmNhanPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmThongTinKhachSan.resx">
+      <DependentUpon>frmThongTinKhachSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmThongTinNhom.resx">
+      <DependentUpon>frmThongTinNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmTimKiemDichVu.resx">
+      <DependentUpon>frmTimKiemDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmTimKiemKhachHang.resx">
+      <DependentUpon>frmTimKiemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmTimKiemNhanVien.resx">
+      <DependentUpon>frmTimKiemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmTimKiemPhong.resx">
+      <DependentUpon>frmTimKiemPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\frmTroGiup.resx">
+      <DependentUpon>frmTroGiup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresentationLayers\ReportDoanhThuTheoThang.rdlc" />
+    <EmbeddedResource Include="PresentationLayers\Report_DoanhThuTheoNgay.rdlc" />
+    <EmbeddedResource Include="PresentationLayers\Report_HoaDonThanhToan.rdlc" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLKSDataSet.xsc">
+      <DependentUpon>QLKSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLKSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLKSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLKSDataSet.xss">
+      <DependentUpon>QLKSDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\Floppy-Small-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
